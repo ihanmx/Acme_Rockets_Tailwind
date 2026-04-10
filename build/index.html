@@ -200,6 +200,40 @@
         >
           Contact Us
         </h2>
+
+        <form
+          action=""
+          class="max-w-4xl mx-auto text-2xl sm:text-3xl flex flex-col items-left gap-4"
+        >
+          <label for="subject" class="">Subject:</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            required
+            minlength="3"
+            maxlength="60"
+            placeholder="Your subject"
+            class="w-full text-2xl sm:w-3xl text-black p-3 rounded-xl border border-solid border-slate-900 dark:border-none"
+          />
+
+          <label for="message" class="">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            required
+            cols="30"
+            rows="10"
+            placeholder="Your message"
+            class="w-full text-2xl sm:w-3xl text-black p-3 rounded-xl border border-solid border-slate-900 dark:border-none"
+          ></textarea>
+          <button
+            type="submit"
+            class="bg-teal-700 hover:bg-teal-600 active:bg-teal-500 text-white p-3 w-48 rounded-xl border border-solid border-slate-900 dark:border-none"
+          >
+            Submit
+          </button>
+        </form>
       </section>
     </main>
   </body>
